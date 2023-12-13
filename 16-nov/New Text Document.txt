@@ -1,0 +1,34 @@
+Wait:
+*The Wait() method is related to the Object class.
+*it is used for thread synchronization
+*The Wait() is not a static method.
+*The Wait() is only called from the synchronized block. 
+  If we call it from outside a synchronized block then we will get an IllegalMonitorStateException.
+*The wait() can be used with the help of the following overloaded methods:
+  wait()
+  wait(long timeout)
+  wait(long timeout, int nanoseconds)
+
+* Method Signature for wait()
+public final void wait(long timeout)
+
+
+
+
+
+
+
+Sleep:
+*The sleep() is called on the currently executing thread.
+*Used for time synchronization.
+*The sleep() is a static method.
+*The sleep() can be called outside a synchronized block as well
+*The sleep() can be used with the help of the following overloaded methods:
+  sleep()
+
+ sleep(long milliseconds)
+ sleep(long milliseconds, int 
+
+*Method Signature for sleep()
+public static void sleep(long milliseconds) throws Interrupted_Execption
+
