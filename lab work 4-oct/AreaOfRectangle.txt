@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class AreaOfRectangle {
+
+	public static void main(String[] args) {
+	                  
+		Scanner obj = new Scanner(System.in);
+		
+		System.out.println("Enter the length of the rectangle :");
+		int length = obj.nextInt();
+		
+		System.out.println("Enter the Bregth of the rectangle :");
+		int breadth = obj.nextInt();
+		
+		//area of the rectangle is l*b so we are going to multiply the variables 
+		
+		System.out.println(" Area of the rectangle is  : " +(length*breadth));
+		
+		
+		
+		
+		
+		
+	
+		
+	}
+	
+	
+}

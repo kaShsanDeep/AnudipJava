@@ -1,0 +1,20 @@
+public class MainMethod  {
+
+
+
+    // The main method is the entry point of the program
+    public static void main(String[] args) {
+   
+
+     // This is where the program starts executing , and all the programs written in the main method would be compile and execute 
+        
+        // Print a simple message to the console
+        System.out.println("Hello, World!");
+        
+        // Let's print another argument
+        System.out.println("Hi this is sandeep, writing the main method script here :");
+    
+        
+       
+    }
+}

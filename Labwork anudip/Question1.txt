@@ -1,0 +1,13 @@
+public class Question1 {
+      
+      public static void main (String args[]){
+
+            System.out.println("Hello world.");
+	
+		}
+      
+}
+// To run this programm on the command prompt 
+//we need to compile it first using : "javac First.java"
+//after compilation we would run the code with the command: " java  First.java"
+

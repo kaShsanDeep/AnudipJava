@@ -1,0 +1,17 @@
+public class Question3 {
+
+
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("HeLLo Everyone,"+"\"+"n"+"is to go to break the line and send the text to the next line ");
+
+        
+		//for example the givn below 
+		
+		System.out.println("this is the list of the students: \n Sandeep \n paras \n and so on...");
+ 		
+		}
+
+}

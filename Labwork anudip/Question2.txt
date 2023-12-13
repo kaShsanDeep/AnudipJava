@@ -1,0 +1,17 @@
+public class Question2 {
+
+
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("HeLLo Everyone, sandeep is here, this is to show  difference  between the print and println");
+
+        
+		
+		System.out.print("  print statement would print the line and wont go to  next line");
+		System.out.println("  print ln would print the statement and will go to the next line");
+ 		
+		}
+
+}

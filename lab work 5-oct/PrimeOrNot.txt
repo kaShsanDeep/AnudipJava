@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class PrimeOrNot {
+
+	public static void main(String[] args) {
+		
+		//creating a Scanner object to take inputs from the system
+		Scanner obj = new Scanner(System.in);
+		
+		System.out.println("Enter your number");
+		
+		
+		int num;   //creating num variable
+		
+		num = obj.nextInt();
+		
+		if(num%2==0) {
+			//if the num varaible gives the reminder zero while deividing with 2 then it is a even no
+			System.out.println("This is a even number");
+		}
+		else {
+			System.out.println("This is odd number");
+		}
+		
+		
+
+	}
+
+}
