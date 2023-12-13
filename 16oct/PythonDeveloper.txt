@@ -1,0 +1,54 @@
+package LabProjects;
+
+public class PythonDeveloper {
+	
+	int id; 
+	String name;
+	String email; 
+	int yearsOfExperience; 
+	String department; 
+	double salary;
+	int refno;
+	int empId;
+	
+	
+	
+	PythonDeveloper(int id, int yearsOfExperience,double salary ) {
+		
+		this.id= id;
+		this.yearsOfExperience=yearsOfExperience;
+		this.salary=salary;
+		
+	}
+	
+	PythonDeveloper(String name, String email,String department ) {
+		
+		this.name=name;
+		this.email=email;
+		this.department=department;
+		
+	}
+	
+	
+	
+	
+	PythonDeveloper()
+	    {
+	        // an empty PythonDeveloper
+	        empId = id = refno = 0;
+	    }
+	
+
+	public static void main(String[] args) {
+	
+		PythonDeveloper obj = new PythonDeveloper(11,5,15500.00);
+		
+		PythonDeveloper obj2 = new PythonDeveloper("Sandeep","Kashyaprishi56","IT");
+		
+		System.out.println("Employee name : "+obj2.name+"and Salary is : "+obj.salary);
+		System.out.println(obj.empId);
+		
+		
+	}
+
+}

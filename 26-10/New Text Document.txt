@@ -1,0 +1,22 @@
+/* Print pattern in java
+
+String s="Anudip"
+
+Anudip
+Anudi
+Anud
+Anu
+An
+A 
+*/
+
+
+{
+    public static void main(String[] args) {
+        String s = "Anudip";
+
+        for (int i = s.length(); i > 0; i--) {
+            System.out.println(s.substring(0, i));
+        }
+    }
+}

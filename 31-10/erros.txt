@@ -1,0 +1,24 @@
+Compile-time Exceptions (or Compile-time Errors):
+
+When they occur: Compile-time exceptions are detected by the compiler during the compilation process before the program is executed.
+Cause: These errors are usually the result of syntactical or structural issues in the code, such as syntax errors, type mismatch errors, missing declarations, etc.
+Examples:
+Syntax errors: Incorrect use of programming language syntax.
+Type errors: Assigning a value of one type to a variable of another type.
+Undeclared variable: Using a variable that has not been declared.
+Handling: These errors must be fixed by the programmer before the program can be successfully compiled and run.
+
+
+
+
+
+
+Runtime Exceptions (or Runtime Errors):
+
+When they occur: Runtime exceptions happen during the execution of the program, after the compilation is successful. They are not known to the compiler beforehand.
+Cause: These errors occur due to issues that arise while the program is running, such as division by zero, accessing an array index out of bounds, attempting to open a file that does not exist, etc.
+Examples:
+Division by zero: Attempting to divide a number by zero.
+Null pointer exception: Accessing or dereferencing a null object reference.
+Array index out of bounds: Trying to access an array element with an index that is beyond the array's bounds.
+Handling: Developers can use exception handling mechanisms like try-catch blocks to handle runtime exceptions gracefully. If not handled, these errors can lead to the termination of the program.

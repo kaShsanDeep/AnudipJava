@@ -1,0 +1,14 @@
+mysql> create table enrolement (Name varchar(20),Mobile varchar(10),Email varchar(20),Qualification varchar(20),Marks Int, PassingYear varchar(10));
+Query OK, 0 rows affected (0.09 sec)
+mysql> desc enrolement;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Name          | varchar(20) | YES  |     | NULL    |       |
+| Mobile        | varchar(10) | YES  |     | NULL    |       |
+| Email         | varchar(20) | YES  |     | NULL    |       |
+| Qualification | varchar(20) | YES  |     | NULL    |       |
+| Marks         | int         | YES  |     | NULL    |       |
+| PassingYear   | varchar(10) | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+6 rows in set (0.02 sec)

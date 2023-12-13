@@ -1,0 +1,34 @@
+mysql> insert into trainer values(101,'faculty','preeti','soft Skill' );
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select*from trainer;
++-----------+-------------+-------------+------------+
+| trainerId | designation | trainerName | subect     |
++-----------+-------------+-------------+------------+
+|       101 | faculty     | preeti      | soft Skill |
++-----------+-------------+-------------+------------+
+1 row in set (0.00 sec)
+
+mysql> insert into trainer values (103,'sr.faculty','sanjay','english');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into trainer values(102,'faculty','bhaskarsai','java');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into trainer values (104,'sr.faculty','ramesh','reasoing');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into trainer values(105,'faculty','raghav','aptitude');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select*from trainer;
++-----------+-------------+-------------+------------+
+| trainerId | designation | trainerName | subect     |
++-----------+-------------+-------------+------------+
+|       101 | faculty     | preeti      | soft Skill |
+|       102 | faculty     | bhaskarsai  | java       |
+|       103 | sr.faculty  | sanjay      | english    |
+|       104 | sr.faculty  | ramesh      | reasoing   |
+|       105 | faculty     | raghav      | aptitude   |
++-----------+-------------+-------------+------------+
+5 rows in set (0.00 sec)

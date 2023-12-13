@@ -1,0 +1,13 @@
+mysql> use sandeepdb;
+Database changed
+mysql>  create table  trainer( trainerId Int , designation varchar(10), trainerName varchar(20), subect varchar(10),PRIMARY KEY(trainerId));
+Query OK, 0 rows affected (0.30 sec)
+
+mysql> show tables;
++---------------------+
+| Tables_in_sandeepdb |
++---------------------+
+| students            |
+| trainer             |
++---------------------+
+2 rows in set (0.04 sec)

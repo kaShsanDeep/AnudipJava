@@ -1,0 +1,45 @@
+//Write a program to make a Vector of 5 Student objects.
+
+//Print these students by using Enumeration
+
+
+
+import java.util.*;
+
+public class VectorExample {
+
+    public static void main(String[] args) {
+        // Create a Vector of 5 Student objects
+        Vector<Student> students = new Vector<Student>();
+        students.add(new Student("John", 20));
+        students.add(new Student("Mary", 21));
+        students.add(new Student("Bob", 22));
+        students.add(new Student("Alice", 23));
+        students.add(new Student("Tom", 24));
+
+        // Print the students using Enumeration
+        Enumeration<Student> e = students.elements();
+        while (e.hasMoreElements()) {
+            Student student = e.nextElement();
+            System.out.println(student.getName() + ", " + student.getAge());
+        }
+    }
+}
+
+class Student {
+    private String name;
+    private int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}

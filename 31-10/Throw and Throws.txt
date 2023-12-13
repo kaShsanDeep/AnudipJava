@@ -1,0 +1,19 @@
+Throw:
+
+* This keyword is used for explicitly throwing an exception.
+* You have to use the throw keyword inside any method.
+* Many exceptions cannot be thrown.
+
+Class Example{
+public static void main(String argu[]){
+throw new ArithmeticException("Divided by zero");}}
+
+
+
+Throws: 
+* This keyword is used for declaring any exception.
+* You have to use the throws keyword with any sign of the method.
+* Many exceptions can be declared using the throws.
+
+Code Snippet:
+public void testExc() throws SQLException , IOException

@@ -1,0 +1,32 @@
+
+//1) Write a program to show multiple inheritance with interfaces. Explain briefly.
+
+/*
+Multiple inheritance by interface can be achieved if 
+a class implements multiple interfaces or 
+also if an interface itself extends multiple interfaces.
+*/
+
+
+
+interface AnimalWalk {
+   void walk();
+}
+interface AnimalSleep {
+   void sleep();
+}
+class Dog implements AnimalWalk, AnimalSleep {
+   public void walk() {
+      System.out.println("Dog is walking... ");
+   }
+   public void sleep() {
+      System.out.println("Dog is sleeping ....");
+   }
+}
+public class MultipleInheritance{
+   public static void main(String args[]) {
+      Dog obj = new Dog();
+      obj.walk();
+      obj.sleep();
+   }
+}

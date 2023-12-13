@@ -1,0 +1,58 @@
+package Book;
+import java.util.ArrayList;   //import an array
+import java.util.Scanner;     //importing scanner class
+import static java.lang.System.*; //import system class
+
+
+
+public class Book {
+	
+	int bookId;
+	String bookName,authorName;
+	
+	public Book(int bookId, String bookName,String authorName) {
+		  
+	      this.bookId=bookId;
+	      this.bookName=bookName;
+	      this.authorName=authorName; 
+	}
+	
+ 
+	
+public class Bookstore {
+
+	public static void main(String[] args) {
+		
+		Scanner sk = new Scanner(System.in);                   //to create object for input value
+		
+		Book  sk1 = new Book(01,"mindset","rodric feather");  //creating objects using cunstroctor
+		Book  sk2 = new Book(02,"The shadow of the house"," rakesh bansal");
+		Book  sk3 = new Book(03,"Dreams","suben path");
+		Book  sk4 = new Book(04,"The only star","iris black");
+		Book  sk5 = new Book(05,"washing past","s sung");
+		Book  sk6 = new Book(06,"Let the weather heat","Xio mi ung");
+	
+	
+		ArrayList<Book> al = new ArrayList<Book>();
+		al.add(sk1);       //adding objects to the array list
+		al.add(sk2);
+		al.add(sk3);
+		al.add(sk4);
+		al.add(sk5);
+		al.add(sk6);
+		
+		for (Book i:al){
+			
+			System.out.println(i);
+			
+		}
+		
+		
+		
+		
+	
+		
+		sk.close();  //scanner object close 
+	}
+
+}

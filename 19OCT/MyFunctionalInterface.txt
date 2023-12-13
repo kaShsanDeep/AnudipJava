@@ -1,0 +1,19 @@
+//quesiton -2 :Write a program to demonstrate functional interface.
+
+//In Java, a functional interface is an interface that contains only one abstract method.
+
+@FunctionalInterface
+interface MyFunctionalInterface {
+    void myMethod();
+}
+
+public class FunctionalInterfaceExample {
+    public static void main(String[] args) {
+        // Using a lambda expression to implement the abstract method of the functional interface
+
+        MyFunctionalInterface myFunctionalInterface = () -> System.out.println("Hello from MyFunctionalInterface!");
+
+        // Calling the method defined in the functional interface using the lambda expression
+        myFunctionalInterface.myMethod();
+    }
+}

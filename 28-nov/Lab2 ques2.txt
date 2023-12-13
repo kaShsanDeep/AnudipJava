@@ -1,0 +1,115 @@
+Q - Demonstrate how you will use foreign key in the above table.
+
+Query:-
+
+//ADDING FOREIGN KEY INTO THE TABLE CUSTOMER
+
+mysql> alter table Customer add foreign key(PId) references Product(PId);
+Query OK, 0 rows affected (0.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc Customer;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| CId      | varchar(10) | NO   | PRI | NULL    |       |
+| CName    | varchar(50) | YES  |     | NULL    |       |
+| CEmail   | varchar(50) | YES  |     | NULL    |       |
+| Password | varchar(15) | YES  |     | NULL    |       |
+| PId      | varchar(10) | YES  | MUL | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+//INSERTING THE PId VALUE IN THE CUSTOMER TABLE
+
+mysql> update Customer set PId='Pr408' where CId='CU342';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update Customer set PId='Pr301' where CId='CU343';
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update Customer set PId='Pr233' where CId='CU344';
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update Customer set PId='Pr408' where CId='CU345';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from Customer;
++-------+---------+-------------------+------------+-------+
+| CId   | CName   | CEmail            | Password   | PId   |
++-------+---------+-------------------+------------+-------+
+| CU342 | Neha    | neha@gmail.com    | neha342    | Pr408 |
+| CU343 | Nitesh  | nitesh@gmail.com  | nitesh343  | Pr301 |
+| CU344 | Asitosh | asitosh@gmail.com | asitosh344 | Pr233 |
+| CU345 | Sweety  | sweety@gmail.com  | sweety345  | Pr408 |
++-------+---------+-------------------+------------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from Product;
++-------+------------+-----------+-------+
+| PId   | PName      | Category  | Price |
++-------+------------+-----------+-------+
+| Pr233 | Adidas     | Shoes     |  3500 |
+| Pr301 | Fireboltt  | Watches   |  3000 |
+| Pr325 | DressBerry | Watches   |  2500 |
+| Pr402 | Pandent    | Jewellary |  1000 |
+| Pr408 | Bracelet   | Jewellary |  1500 |
++-------+------------+-----------+-------+
+5 rows in set (0.00 sec)
+
+//APPLYING INNER JOIN ON BOTH WITH THE HELP OF FOREIGN KEY
+
+mysql> select Customer.CName, Customer.CEmail, Product.PName, Product.Category, Product.Price
+    -> from
+    -> Customer inner join Product on
+    -> (Customer.PId=Product.PId);
++---------+-------------------+-----------+-----------+-------+
+| CName   | CEmail            | PName     | Category  | Price |
++---------+-------------------+-----------+-----------+-------+
+| Neha    | neha@gmail.com    | Bracelet  | Jewellary |  1500 |
+| Nitesh  | nitesh@gmail.com  | Fireboltt | Watches   |  3000 |
+| Asitosh | asitosh@gmail.com | Adidas    | Shoes     |  3500 |
+| Sweety  | sweety@gmail.com  | Bracelet  | Jewellary |  1500 |
++---------+-------------------+-----------+-----------+-------+
+4 rows in set (0.00 sec)
+
+//APPLYING LEFT JOIN ON BOTH WITH THE HELP OF FOREIGN KEY
+
+
+mysql> select Customer.CName, Customer.CEmail, Product.PName, Product.Category, Product.Price
+    -> from
+    -> Customer left join Product on
+    ->
+    -> (Customer.PId=Product.PId);
++---------+-------------------+-----------+-----------+-------+
+| CName   | CEmail            | PName     | Category  | Price |
++---------+-------------------+-----------+-----------+-------+
+| Neha    | neha@gmail.com    | Bracelet  | Jewellary |  1500 |
+| Nitesh  | nitesh@gmail.com  | Fireboltt | Watches   |  3000 |
+| Asitosh | asitosh@gmail.com | Adidas    | Shoes     |  3500 |
+| Sweety  | sweety@gmail.com  | Bracelet  | Jewellary |  1500 |
++---------+-------------------+-----------+-----------+-------+
+4 rows in set (0.00 sec)
+
+//APPLYING RIGHT JOIN ON BOTH WITH THE HELP OF FOREIGN KEY
+
+
+mysql> select Customer.CName, Customer.CEmail, Product.PName, Product.Category, Product.Price
+    -> from
+    -> Customer right join Product on
+    -> (Customer.PId=Product.PId);
++---------+-------------------+------------+-----------+-------+
+| CName   | CEmail            | PName      | Category  | Price |
++---------+-------------------+------------+-----------+-------+
+| Asitosh | asitosh@gmail.com | Adidas     | Shoes     |  3500 |
+| Nitesh  | nitesh@gmail.com  | Fireboltt  | Watches   |  3000 |
+| NULL    | NULL              | DressBerry | Watches   |  2500 |
+| NULL    | NULL              | Pandent    | Jewellary |  1000 |
+| Neha    | neha@gmail.com    | Bracelet   | Jewellary |  1500 |
+| Sweety  | sweety@gmail.com  | Bracelet   | Jewellary |  1500 |
++---------+-------------------+------------+-----------+-------+
+6 rows in set (0.00 sec)
