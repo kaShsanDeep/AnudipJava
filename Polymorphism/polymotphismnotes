@@ -1,0 +1,3 @@
+In java polymorphism is seen in two ways:
+1) Overloading: method overloding, constructor overloading are different ways of overloading.
+in method/constructor we see same named method/constructor in the same class having different behaviour 

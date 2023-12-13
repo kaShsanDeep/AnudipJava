@@ -1,0 +1,4 @@
+1 single inharitance : one parant has on child 
+multilevel inharitance : ne parant has one child and that one child has one child and so on.
+Hierarchical:  a paramt cam have as many childs 
+multiple inharitance : this is not allowed in the java ,when two or more childs has the same parant
