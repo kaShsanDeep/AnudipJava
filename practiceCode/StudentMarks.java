@@ -1,0 +1,70 @@
+package practiceCode;
+import java.util.Scanner;
+
+public class StudentMarks {
+
+	public static void main(String[] args) {
+		
+		Student obj = new Student(); // creating the class object
+		
+			obj.result();		//calling the result method where the original code is written
+		
+		                
+		
+	}	
+	
+	
+	
+		
+		
+
+	}
+
+
+
+
+ class Student{
+	
+	
+	public void result() {
+		
+		
+		Scanner obj = new Scanner(System.in);
+		
+		System.out.println("Enter the marks of the student  : ");
+		int marks = obj.nextInt();
+		
+
+		 if (marks<=40) {
+				System.out.println("Student has Failed the exam ");
+				}
+			else if(marks>40 && marks<=60) {
+				
+				System.out.println("Student is PASSED in the exam  ");			
+			}	 
+		 
+			else if(marks>60 && marks<=70) {
+				System.out.println("Student has Distinction in the exam");	
+				
+			}
+			else if(marks>70 && marks<=80) {
+				System.out.println("Student  is SECOND class in the exam  ");	
+				
+			}
+			else if(marks>80 && marks<=100) {
+				System.out.println("Student is FIRST in the exam  ");		
+			}
+			else {
+				System.out.println("Enter the valid Score of the student");
+			}
+                      
+		
+		
+		
+		
+	}
+	
+	
+}
+
+
