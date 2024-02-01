@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sandeep portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ 
+ 
+    <style>
+		
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+   
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+   
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    
+    img{
+		opacity:0.4;
+	}
+    
+    </style>
+    
+    
+    <script>
+		
+		var colors = ["blue", "yellow", "red", "green", "orange"]
+		var currentColor = 0
+		var lis = document.querySelectorAll("#trl p")
+	
+	
+		function changeColor() {
+  		--currentColor
+  if (currentColor < 0) currentColor = colors.length -1
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].style.color = colors[(currentColor +i) % colors.length]
+  }
+}
+		
+		window.setInterval("changeColor", 1000);
+		
+	</script>
+    
+    
+    
+  </head>
+  
+  
+  
+  
+  
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.6435-9/136124340_2873060882938419_6124821195045816379_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7a1959&_nc_ohc=iHedLWV3F_oAX8KfA_2&_nc_oc=AQmlYMpQllXqrrH83JSU9yie-jIWadJGD5zn7F7nfcbxsrLRLi2e_6rgBf7wcb4gMNb-PxY0aTfDotQvnckY8Q8-&_nc_ht=scontent.fdel3-1.fna&oh=00_AfCasG2FFb5jIKck-LIxf_6M_YXpI1azMi61EpFbBi3CUg&oe=65D60D74" style="width:100%">
+ 
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button  w3-padding-large  w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small w3-hover-text-black">I'm</span> SANDEEP KUMAR.</h1>
+    <p id ="trl" class=" w3-hover-text-black">Traveler and Web Designer.</p>
+   
+    <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.6435-9/136124340_2873060882938419_6124821195045816379_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7a1959&_nc_ohc=iHedLWV3F_oAX8KfA_2&_nc_oc=AQmlYMpQllXqrrH83JSU9yie-jIWadJGD5zn7F7nfcbxsrLRLi2e_6rgBf7wcb4gMNb-PxY0aTfDotQvnckY8Q8-&_nc_ht=scontent.fdel3-1.fna&oh=00_AfCasG2FFb5jIKck-LIxf_6M_YXpI1azMi61EpFbBi3CUg&oe=65D60D74" alt="boy" class="w3-image" width="992" height="900">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-hover-text-red">Some text about me. <br>Hey, this is my homepage, so I have to say something about myself. Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with.</p>
+     <p class="w3-hover-text-red">Let me introduce myself with my qualification, I have completed Engineering(ECE) in 2021 from Bharati Vidyapeeth College of Engineering Delhi. I also did my Diploma in Instrumantation and control Engineering from CHHOTU RAM RURAL INSTITUTE OF TECHNOLOGY,Delhi.
+     and my schooling from govt.school.</p> 
+     <p class ="w3-hover-text-red">Let me give a try to see what kind of image you have about me through my self-description. I hope that my impression about myself and your impression about me are not so different. Here it goes.
+	 I am a person who is positive about every aspect of life.</p>
+	
+	<p class ="w3-hover-text-red"> There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. 
+	 I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face. I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night.
+	 I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people.
+	 I like country’s peace, I like metropolis’ noise; I like the flat cornfield in Champaign. I like delicious food and comfortable shoes; 
+	 I like good books and romantic movies. I like the land and the nature, I like people. And, I like to laugh.</p>
+
+</p>
+
+
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    
+    
+    <p class="w3-wide">JAVA</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    
+    <p class="w3-wide">HTML,CSS,Javascript</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
+    </div>
+   
+   
+    <p class="w3-wide">MYSQL</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+    </div><br>
+    
+    
+    <p class="w3-wide">Typing</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div>
+  
+    
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:30%"></div>
+    </div><br>
+    
+    
+    
+    
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey  w3-hover-black">
+      
+      
+      <div class="w3-quarter w3-section w3-hover-black">
+        <span class="w3-xlarge w3-text-grey  ">Java fullstack  developer course</span><br>
+        Anudip foundation
+      </div>
+      
+      
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge w3-text-grey">5+</span><br>
+        Projects Done
+      </div>
+      
+      
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge w3-text-grey">HTML,JAVA,CSS,<br>JAVASCRIPT,SQL</span><br>
+       Certificates from Solo learn
+      </div>
+      
+      
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge w3-text-grey">
+			Bank management system
+         
+        </span><br>
+        Sprint 1 project
+      </div>
+    </div>
+
+    <button class="w3-button w3-green w3-padding-large w3-section">
+      <a href="https://drive.google.com/file/d/1lNPaSmR3pC7-H1qVOwsBEL02B4bzpK9R/view?usp=drive_link" target=_"blank" ><i class="fa fa-download"></i> Download Resume<a/>
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">TECHNICAL SKILLS</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+		  
+        <ul class="w3-ul w3-light-grey w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Framework and database</li>
+          <li class="w3-padding-16">Hibernate</li>
+          <li class="w3-padding-16">JDBC</li>
+          <li class="w3-padding-16">Mysql</li>
+          <li class="w3-padding-16">react</li>
+          <li class="w3-padding-16">       </li>
+          
+          
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">show more</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-light-grey w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">IDE tool</li>
+          <li class="w3-padding-16">Eclipse</li>
+          <li class="w3-padding-16">JDK18</li>
+          <li class="w3-padding-16">Github</li>
+          <li class="w3-padding-16">vistual studio</li>
+          <li class="w3-padding-16">
+            
+          
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">show more</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My accounts</h3>
+
+   <a href="https://www.linkedin.com/in/sandeep-kumar-04a931171/" target="_blank"> <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Linkedin </span> </p><a/>
+    
+    <br><br>
+    <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank">  <img src="https://w7.pngwing.com/pngs/373/665/png-transparent-naukri-com-employment-website-job-hunting-online-job-search-india-employment-online-job-search-thumbnail.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+  <p><span class="w3-large w3-margin-right">naukri.com</span> </p></a>
+ 
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity ">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px ">
+      <div class="w3-half  " >
+        <img src="https://scontent.fdel3-5.fna.fbcdn.net/v/t1.6435-9/32470966_2115910468653468_8579230661620006912_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=DR18xH9jl1gAX-Q91Fc&_nc_ht=scontent.fdel3-5.fna&oh=00_AfB75rr_wKj57Xp5nteLOMjoPsIZeFnSV9uTCsjQ-oAobQ&oe=65DE43A5" class="w3-hover-opacity-off" style="width:100%">
+        <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t39.30808-6/294844147_3297326610511842_183990657459460878_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=DN6snjGMNQYAX_x9u2N&_nc_ht=scontent.fdel3-1.fna&oh=00_AfCVkVWbohNM_2YJaANVP-Mug1k8XJU2_8hgJ-TSXNZF9A&oe=65BB680B" class="w3-hover-opacity-off" style="width:100%">
+        <img src="https://scontent.fdel3-5.fna.fbcdn.net/v/t1.6435-9/87366219_2597471287164048_2250296605196419072_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7a1959&_nc_ohc=nECKvL7HM-kAX_1_oxG&_nc_ht=scontent.fdel3-5.fna&oh=00_AfDgrmpRbLIPZcOlLD7BmZBc0sfTvUeImCe90uVoa7iXsg&oe=65DE2026" class="w3-hover-opacity-off" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="https://scontent.fdel3-4.fna.fbcdn.net/v/t39.30808-6/242752816_3069437319967440_3788692659344827442_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=mPYJtJf0qc8AX90Xjt8&_nc_ht=scontent.fdel3-4.fna&oh=00_AfCJQ_9Y8TF6MKQLUd2EtIM798meLyURFF977Cegu1ZAKQ&oe=65BB216B" class="w3-hover-opacity-off" style="width:100%">
+        <img src="https://scontent.fdel3-3.fna.fbcdn.net/v/t1.6435-9/117772373_2744137509164091_5710192003768423465_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=UNnEkmOkPMIAX8TqJyO&_nc_ht=scontent.fdel3-3.fna&oh=00_AfAiKcAhWHPt-mgMPH7_HhopOw8rxzmr4v_h7CNwV0CAtg&oe=65DE2C29"  class="w3-hover-opacity-off" style="width:100%">
+        <img src="https://scontent.fdel3-3.fna.fbcdn.net/v/t31.18172-8/20643344_1980137048897478_2241695089015279429_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7a1959&_nc_ohc=dAbL6vWBB9MAX_nIchy&_nc_ht=scontent.fdel3-3.fna&oh=00_AfDy4TLZLa9VyBCtlay9SiQQYr57wy-SB-38v6HgXOiTCQ&oe=65DE338E" class="w3-hover-opacity-off" style="width:100%">
+        <img src="https://scontent.fdel3-4.fna.fbcdn.net/v/t31.18172-8/25439974_2040732986171217_2322993622856595035_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7a1959&_nc_ohc=0NtC0gWOAEoAX991hO4&_nc_ht=scontent.fdel3-4.fna&oh=00_AfCzMajoxWkA-LBHxtNmQ2LnSaafVgWYjUHai-UC4LaOZQ&oe=65DE206E"class="w3-hover-opacity-off"  style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p class="w3-hover-text-red"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right "></i> India, Delhi</p>
+      <p class="w3-hover-text-red"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 8287416687</p>
+      <p class="w3-hover-text-red"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Kashyaprishi56@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+ <a  href="https://www.facebook.com/rishu.kaishav/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+ <a href="https://www.instagram.com/01jankash/"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+ <a href="https://in.pinterest.com/kashyaprishi760/" ><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/SandeepKaS39248"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/sandeep-kumar-04a931171/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+ <p class="w3-small">This Website was made by sandeep using  CSS libraries from w3school and font libraries from googleapis.</p>
+
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
